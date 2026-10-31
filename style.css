@@ -117,6 +117,88 @@ h1 em { color: var(--red); font-style: normal; }
 .fact-anniversary p { margin: 0; color: #62574e; font-size: clamp(12px, 1.3vw, 14px); line-height: 1.85; }
 .fact-anniversary strong { color: var(--deep-red); font-weight: 700; }
 
+.promo-ad {
+  position: relative;
+  margin: 26px 10px 18px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f6f0e6;
+  box-shadow: 0 12px 30px rgb(70 51 31 / 7%);
+}
+
+.promo-banner-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 82px;
+  padding: 18px 20px;
+  background: linear-gradient(90deg, #7e1d2e 0%, #aa2b35 24%, #d06d41 100%);
+  color: #fff;
+  font-size: clamp(22px, 2.6vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.promo-business-card {
+  margin: 0;
+  padding: 26px 18px 18px;
+  border: 1px solid #e6d7b8;
+  border-radius: 6px;
+  background: #f4efe9;
+}
+
+.promo-business-header {
+  text-align: center;
+  color: #6a1b22;
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+}
+
+.promo-business-subtitle {
+  margin-top: 18px;
+  text-align: center;
+  color: #6a1b22;
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 700;
+}
+
+.promo-business-card p {
+  margin: 18px auto 0;
+  max-width: 820px;
+  color: #4f3f38;
+  font-size: clamp(14px, 1.5vw, 17px);
+  line-height: 1.9;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .promo-banner-title {
+    min-height: 68px;
+    padding: 14px 12px;
+    font-size: clamp(18px, 5vw, 28px);
+  }
+  .promo-business-card {
+    margin: 0;
+    padding: 16px 12px;
+  }
+  .promo-business-header {
+    font-size: clamp(22px, 7vw, 32px);
+  }
+  .promo-business-subtitle {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .promo-business-card p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}
+
 .card-footer { display: flex; justify-content: center; gap: 10px; margin: 19px 0 0; color: #82786b; font-size: 9px; letter-spacing: .06em; }
 .card-footer i { color: var(--gold); font-style: normal; }
 .page-note { max-width: 760px; margin: 22px auto 0; padding: 15px 12px 4px; border-top: 1px solid #e6dece; text-align: center; }
@@ -157,6 +239,12 @@ h1 em { color: var(--red); font-style: normal; }
   .thought { min-height: 150px; grid-template-columns: .9fr 1.1fr; margin-right: 4px; margin-left: 4px; }
   .thought img { min-height: 150px; }
   .thought-copy { padding: 16px; }
+  .promo-ad { margin-right: 4px; margin-left: 4px; }
+  .promo-header { padding: 18px 12px 10px; }
+  .promo-date-line { font-size: clamp(18px, 4vw, 30px); }
+  .promo-header h2 { font-size: clamp(24px, 5vw, 36px); }
+  .promo-quote { font-size: clamp(18px, 3vw, 26px); }
+  .promo-cta-row { grid-template-columns: 1fr; max-width: 360px; }
   .fact { gap: 18px; margin: 0 4px; padding: 22px; }
   .milestones { gap: 12px; }
   .milestone { padding: 16px; }
@@ -190,6 +278,16 @@ h1 em { color: var(--red); font-style: normal; }
   .thought-copy > span { margin-top: 8px; font-size: 8px; }
   .thought-copy p { margin-top: 6px; font-size: 12px; line-height: 1.85; }
   .thought img { height: 150px; min-height: 0; object-position: center 54%; }
+  .promo-ad { margin: 18px 3px 15px; }
+  .promo-ribbon { font-size: 8px; letter-spacing: 0.06em; }
+  .promo-header { padding: 15px 10px 8px; }
+  .promo-date-line { font-size: 20px; }
+  .promo-header h2 { font-size: 24px; }
+  .promo-badge { font-size: 11px; padding: 7px 12px; }
+  .promo-quote { font-size: 18px; }
+  .promo-body { font-size: 13px; }
+  .promo-cta-row { margin: 18px auto 14px; padding: 0 12px; }
+  .promo-stat { min-height: 96px; padding: 14px 12px; }
   .fact { gap: 15px; margin: 0 3px; padding: 18px 15px; }
   .fact-kicker { flex-wrap: wrap; font-size: 9px; }
   .fact h2 { font-size: 20px; }
