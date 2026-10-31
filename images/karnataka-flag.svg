@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2=".18">
+      <stop offset="0" stop-color="#7e111d"/>
+      <stop offset=".18" stop-color="#d02b32"/>
+      <stop offset=".36" stop-color="#871722"/>
+      <stop offset=".54" stop-color="#e03a35"/>
+      <stop offset=".72" stop-color="#8f1822"/>
+      <stop offset=".87" stop-color="#cc2a32"/>
+      <stop offset="1" stop-color="#74131e"/>
+    </linearGradient>
+    <linearGradient id="gold-cloth" x1="0" y1="0" x2="1" y2=".15">
+      <stop offset="0" stop-color="#c88a18"/>
+      <stop offset=".2" stop-color="#ffdc58"/>
+      <stop offset=".38" stop-color="#d8a32b"/>
+      <stop offset=".57" stop-color="#ffe477"/>
+      <stop offset=".76" stop-color="#d7a12a"/>
+      <stop offset=".9" stop-color="#f8d451"/>
+      <stop offset="1" stop-color="#bf8518"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2=".2">
+      <stop offset="0" stop-color="#000" stop-opacity=".2"/>
+      <stop offset=".1" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".22" stop-color="#000" stop-opacity=".23"/>
+      <stop offset=".36" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".52" stop-color="#000" stop-opacity=".2"/>
+      <stop offset=".67" stop-color="#fff" stop-opacity=".09"/>
+      <stop offset=".84" stop-color="#000" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".07"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  <path fill="url(#cloth)" d="M0 0h1600v1000H0z"/>
+  <path fill="url(#gold-cloth)" d="M0 0h1600v500c-160-54-300 42-470-4-183-50-301 59-487-4-208-71-412 38-643-10z"/>
+  <path fill="url(#shade)" opacity=".72" d="M0 0h1600v1000H0z"/>
+  <path fill="none" stroke="#fff" stroke-opacity=".13" stroke-width="9" filter="url(#soft)" d="M-50 150c300 70 375-90 650 0s370-100 650-10 280-45 430-5M-50 780c290-60 390 120 680 20s400 100 650 20 240 40 400 0"/>
+</svg>
